@@ -2,7 +2,7 @@ baseurl = "https://guigomcha.gitlab.io/centroecologicogaia/"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
-title = "Beautiful Hugo"
+title = "Centro Ecologico Gaia"
 canonifyurls  = true
 
 DefaultContentLanguage = "en"
@@ -14,9 +14,9 @@ pygmentCodeFences = true
 #googleAnalytics = "XXX"
 
 [Params]
-  subtitle = "Hugo Blog Template for GitLab Pages"
-  logo = "img/avatar-icon.png"
-  favicon = "img/favicon.ico"
+  subtitle = "Supermercado Ecologico y Centro de Terapias Alternativas en Sevilla"
+  logo = "imgs/logogaia.png"
+  favicon = "imgs/favicon.ico"
   dateFormat = "January 2, 2006"
   commit = false
   rss = true
@@ -34,25 +34,10 @@ pygmentCodeFences = true
 #  desc = "Hexagon"
 
 [Author]
-  name = "Some Person"
-  email = "youremail@domain.com"
-  facebook = "username"
-  googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
-  gitlab = "username"
-  github = "username"
-  twitter = "username"
-  reddit = "username"
-  linkedin = "username"
-  xing = "username"
-  stackoverflow = "users/XXXXXXX/username"
-  snapchat = "username"
-  instagram = "username"
-  youtube = "user/username" # or channel/channelname
-  soundcloud = "username"
-  spotify = "username"
-  bandcamp = "username"
-  itchio = "username"
-  keybase = "username"
+  name = "Centro Ecologico Gaia"
+  email = "info@centroecologicogaia.com"
+  facebook = "Centro.Ecologico.Gaia"
+  instagram = "centroecologicogaia"
 
 
 [[menu.main]]

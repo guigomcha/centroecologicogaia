@@ -15,8 +15,8 @@ pygmentCodeFences = true
 
 [Params]
   subtitle = "Supermercado Ecologico y Centro de Terapias Alternativas en Sevilla"
-  logo = "imgs/logogaia.png"
-  favicon = "imgs/favicon.ico"
+  logo = "static/logogaia.png"
+  favicon = "static/favicon.ico"
   dateFormat = "January 2, 2006"
   commit = false
   rss = true

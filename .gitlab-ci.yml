@@ -1,4 +1,14 @@
 image: alpine:latest
+stages:
+  - tests
+  - deploy
+
+linter:
+  image: ruby:3.0
+  stage: tests
+  script:
+    - gem install html-proofer
+    - htmlproofer --extension .html ./public
 
 pages:
   stage: deploy

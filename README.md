@@ -2,4 +2,4 @@
 ---
 
 Example [Hugo] website using GitLab Pages.
-baseurl = "https://guigomcha.github.io/centroecologicogaia/"
+baseurl = "https://guigomcha.gitlab.io/centroecologicogaia/"

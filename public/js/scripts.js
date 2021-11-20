@@ -1,5 +1,4 @@
 $(function () {
-
     // init feather icons
     feather.replace();
 
@@ -42,4 +41,45 @@ $(function () {
         }, 1000);
     });
 
-// TODO: Create the simplest cookie banner possible
+    //odemter init for videos
+    var current = 785541987;
+    var el = document.querySelector('.odometer-video');
+    odo = new Odometer({
+        el: el,
+        value: current,
+        format: '(,ddd)'
+    });
+    setInterval(function () {
+        var newEmailCount = current + getRandomInt(10, 18); // add average of 14 pr 2 seconds
+        odo.update(newEmailCount);
+        current = newEmailCount;
+    }, 2000);
+
+    /**Theme switcher - DEMO PURPOSE ONLY */
+    $('.switcher-trigger').click(function () {
+        $('.switcher-wrap').toggleClass('active');
+    });
+    $('.color-switcher ul li').click(function () {
+        var color = $(this).attr('data-color');
+        $('#theme-color').attr("href", "css/" + color + ".css");
+        $('.color-switcher ul li').removeClass('active');
+        $(this).addClass('active');
+    });
+});
+
+//odemeter random count for videos
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function download_file () {
+    if (window.location.href.indexOf("autodownload") > -1) {
+      window.open("http://localhost:53783/centroecologicogaia/public/docs/HOJA_181021.xlsx");
+      setTimeout(function(){
+            window.alert("Si no se te descarga el archivo, clica en el botón de descarga");
+        }, 1000); //your timeout in miliseconds
+
+    }
+}
+
+document.addEventListener("DOMContentLoaded", download_file, true);

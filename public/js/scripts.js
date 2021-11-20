@@ -71,3 +71,15 @@ $(function () {
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
+
+function download_file () {
+    if (window.location.href.indexOf("autodownload") > -1) {
+      window.open("http://localhost:53783/centroecologicogaia/public/docs/HOJA_181021.xlsx");
+      setTimeout(function(){
+            window.alert("Si no se te descarga el archivo, clica en el botón de descarga");
+        }, 1000); //your timeout in miliseconds
+
+    }
+}
+
+document.addEventListener("DOMContentLoaded", download_file, true);

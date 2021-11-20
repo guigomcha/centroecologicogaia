@@ -1,5 +1,6 @@
 ![Build Status](https://gitlab.com/guigomcha/centroecologicogaia/badges/master/build.svg)
 ---
 
-Example [Hugo] website using GitLab Pages.
-baseurl = "https://guigomcha.github.io/centroecologicogaia/"
+Demo Web Page for Centro Ecologico Gaia from Sevilla.
+
+See latest version at "https://guigomcha.gitlab.io/centroecologicogaia/"

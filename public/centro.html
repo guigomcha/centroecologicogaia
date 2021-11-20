@@ -23,10 +23,10 @@
     <body>
         <!--navigation-->
         <nav class="navbar navbar-expand-md navbar-light bg-green fixed-top sticky-navigation"> <!-- TODO: Make light green after scroll-->
-            <a class="navbar-brand" href="index.html">
-                <!-- TODO: Make it look a button on hover (make it brighter or something like that) -->
-                <img src="img/logo-web-color.png" height="40px" alt="home-button">
+            <a class="navbar-brand" href="index.html"> <!--TODO: Remove white borderline -->
+                <img src="img/logo-web-color.png"  height="40px" alt="home-button" class="card">
             </a>
+            <!-- TODO: Do not know what it does -->
             <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
                     data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span data-feather="menu"></span>
@@ -49,26 +49,27 @@
             </div>
         </nav>
         <!--hero header-->
-        <!-- TODO: Make this Section expand as much as possible horizontally -->
-        <section class="py-6" id="CentroHome">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-8 mx-auto text-center">
-                        <h1>Centro y Escuela de Terápias Alternativas</h1>
-                        <p class="lead mt-3 mb-4">
-                            Composicion, intro, años de experiencia, resumen de los tipos de terapias y certificaciones que dispone la escuela </p>
-                        <div class="featured-box-button">
-                            <a title="" href="#Contacto"><p class="palikefbox">Te asesoramos sin compromiso. Mándanos un e-mail o llámanos</p></a>
-                        </div>
+        <section class="py-8 pr-5 pl-5" id="CentroHome">
+            <div class="row">
+                <div class="mx-auto text-center">
+                    <h1>Centro y Escuela de Terápias Alternativas</h1>
+                    <p class="lead mt-3 mb-4">
+                        Composicion, intro, años de experiencia, resumen de los tipos de terapias y certificaciones que dispone la escuela </p>
+                    <div class="featured-box-button">
+                        <a title="" href="#Contacto"><p class="palikefbox">Te asesoramos sin compromiso. Mándanos un e-mail o llámanos</p></a>
                     </div>
-
                 </div>
+
+            </div>
+            <div class="container">
                 <div class="row mt-5 mx-auto">
                     <div class="col-md-9 mx-auto text-center">
                         <div class="row">
                             <div class="col-md-4 col-6">
-                                <!--TODO: Add link to section with a bright effect on hover-->
-                                <div class="featured-box-thumb"><img src="img/Centro-de-Estudios.jpg" alt="centro-section">
+                                <div class="featured-box-thumb card">
+                                    <a class="page-scroll" href="#CentroGaia">
+                                        <img src="img/Centro-de-Estudios.jpg" alt="centro-section">
+                                    </a>
                                 </div>
                                 <div class="featured-box-content"><h4>Centro de Estudios Alternativos</h4>
                                     <div class="featured-box-desc"><p>Especializados en MTC, ofrecemos cursos profesionales de Acupuntura y Moxibustión, Qigong, Tuina... así como también Kinesiología Integral y Flores de Bach. Damos una formación teórica y sobre todo práctica, llevada a cabo por los mejores profesionales y con una dedicación minuciosa a los alumnos, que son nuestro mejor aval.</p>
@@ -78,8 +79,10 @@
 
                             </div>
                             <div class="col-md-4 col-6 mx-auto mt-4 mt-md-0">
-                                <!--TODO: Add link to section with a bright effect on hover-->
-                                <div class="featured-box-thumb"><img src="img/Centro-de-Terapias.jpg" alt="centro-section">
+                                <div class="featured-box-thumb card">
+                                    <a class="page-scroll" href="#EscuelaGaia">
+                                        <img src="img/Centro-de-Terapias.jpg" alt="centro-section">
+                                    </a>
                                 </div>
                                 <div class="featured-box-content"><h4>Centro de Técnicas Naturales</h4>
                                     <div class="featured-box-desc"><p>Ayuda de profesionales especializados en diferentes técnicas y sistemas de sanación, desde la Acupuntura y la Alimentación, a las Flores de Bach y las Constelaciones Familiares. También un lugar de práctica de Pilates, Yoga y Qigong además de Meditación Budista.</p>
@@ -94,13 +97,14 @@
             </div>
         </section>
 
-        <section class="py-1" id="CentroGaia">
-            <div class="container">
+        <section class="py-1 pr-5 pl-5" id="CentroGaia">
                 <div class="row">
-                    <div class="col-md-6 mx-auto text-center">
+                    <div class="mx-auto text-center">
                         <h2>ESCUELA DE TERAPIAS ALTERNATIVAS</h2>
-                        <p class="lead text-muted">HISTORIA DE CUANDO EMPEZARON LOS CURSOS, CERTIFICACIONES OFICIALES, DETALLES DE CONTACTO GENERAL.
-                            DESCRIPTION DEL TOPIC EN EL QUE SE ENGLOBAN ESTE GRUPO DE CURSOS (MEDICINA CHINA, MASAJES, OTROS)</p>
+                        <p class="lead mt-3 mb-4">
+                                HISTORIA DE CUANDO EMPEZARON LOS CURSOS, CERTIFICACIONES OFICIALES, DETALLES DE CONTACTO GENERAL.
+                                DESCRIPTION DEL TOPIC EN EL QUE SE ENGLOBAN ESTE GRUPO DE CURSOS (MEDICINA CHINA, MASAJES, OTROS)
+                        </p>
                     </div>
                 </div>
                 <div class="row mt-5">
@@ -151,72 +155,79 @@
                     </div>
                 </div>
 
-            <hr class="mb-5"/>
-
-                <div class="row">
-                    <div class="col-md-6 mx-auto text-center">
-                        <h2>CENTRO DE TERAPIAS ALTERNATIVAS</h2>
-                        <p class="lead text-muted">DESCRIPCION GENERAL DE QUE SE HACE, HORARIOS, CUALIFICACION DE QUIEN LO HACE ETC</p>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-md-4">
-                        <div class="nav flex-column nav-tabs nav-features" id="centro-v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <a class="nav-link active" id="centro-v-tab1-tab" data-toggle="tab" href="#centro-v-tab1" role="tab" aria-controls="centro-v-tab1" aria-selected="true">
-                                <div class="card card-body">
-                                    <h6>Terapia tipo 1</h6>
-                                    MINI DESCRIPCIÓN SOBRE QUE VA
-                                </div>
-                            </a>
-                            <a class="nav-link" id="centro-v-tab2-tab" data-toggle="tab" href="#centro-v-tab2" role="tab" aria-controls="centro-v-tab2" aria-selected="false">
-                                <div class="card card-body">
-                                    <h6>Terapia tipo 2</h6>
-                                    Nam liber tempor cum soluta nobis eleifend option congue nihil imper.
-                                </div>
-                            </a>
-                            <a class="nav-link" id="centro-v-tab3-tab" data-toggle="tab" href="#centro-v-tab3" role="tab" aria-controls="centro-v-tab3" aria-selected="false">
-                                <div class="card card-body">
-                                    <h6>Terapia tipo 3</h6>
-                                    Nam liber tempor cum soluta nobis eleifend option congue nihil imper.
-                                </div>
-                            </a>
-                            <a class="nav-link" id="centro-v-tab4-tab" data-toggle="tab" href="#centro-v-tab4" role="tab" aria-controls="centro-v-tab4" aria-selected="false">
-                                <div class="card card-body">
-                                    <h6>Terapia tipo 4</h6>
-                                    Nam liber tempor cum soluta nobis eleifend option congue nihil imper.
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-8 my-auto">
-                        <!-- TODO: Make this column expand vertically the same as the previous one-->
-                        <div class="tab-content" id="centro-v-pills-tabContent" >
-                            <div class="tab-pane fade show active" id="centro-v-tab1" role="tabpanel" aria-labelledby="centro-v-tab1-tab" >
-                                <embed src="docs/nombre_sin_espacios_mejor.pdf" type="application/pdf" width="100%" height="100%">  <!-- TODO: make this div the same height as the left column -->
-                            </div>
-                            <div class="tab-pane fade" id="centro-v-tab2" role="tabpanel" aria-labelledby="centro-v-tab2-tab">
-                                <embed src="docs/nombre_sin_espacios_mejor_2.pdf" type="application/pdf" width="100%" height="100%">  <!-- TODO: make this div the same height as the left column -->
-                            </div>
-                            <div class="tab-pane fade" id="centro-v-tab3" role="tabpanel" aria-labelledby="centro-v-tab3-tab">
-                                <embed src="docs/nombre_sin_espacios_mejor.pdf" type="application/pdf" width="100%" height="100%">  <!-- TODO: make this div the same height as the left column -->
-                            </div>
-                            <div class="tab-pane fade" id="centro-v-tab4" role="tabpanel" aria-labelledby="centro-v-tab4-tab">
-                               <embed src="docs/nombre_sin_espacios_mejor_2.pdf" type="application/pdf" width="100%" height="100%">  <!-- TODO: make this div the same height as the left column -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            <hr class="mb-5"/>
-            </div>
+            <hr class="mb-5">
         </section>
 
+        <section class="py-1 pr-5 pl-5" id="EscuelaGaia">
+            <div class="row">
+                <div class="mx-auto text-center">
+                    <h2>CENTRO DE TERAPIAS ALTERNATIVAS</h2>
+                    <p class="lead mt-3 mb-4">
+                        DESCRIPCION GENERAL DE QUE SE HACE, HORARIOS, CUALIFICACION DE QUIEN LO HACE ETC
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="nav flex-column nav-tabs nav-features" id="centro-v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="centro-v-tab1-tab" data-toggle="tab" href="#centro-v-tab1" role="tab" aria-controls="centro-v-tab1" aria-selected="true">
+                            <div class="card card-body">
+                                <h6>Terapia tipo 1</h6>
+                                MINI DESCRIPCIÓN SOBRE QUE VA
+                            </div>
+                        </a>
+                        <a class="nav-link" id="centro-v-tab2-tab" data-toggle="tab" href="#centro-v-tab2" role="tab" aria-controls="centro-v-tab2" aria-selected="false">
+                            <div class="card card-body">
+                                <h6>Terapia tipo 2</h6>
+                                Nam liber tempor cum soluta nobis eleifend option congue nihil imper.
+                            </div>
+                        </a>
+                        <a class="nav-link" id="centro-v-tab3-tab" data-toggle="tab" href="#centro-v-tab3" role="tab" aria-controls="centro-v-tab3" aria-selected="false">
+                            <div class="card card-body">
+                                <h6>Terapia tipo 3</h6>
+                                Nam liber tempor cum soluta nobis eleifend option congue nihil imper.
+                            </div>
+                        </a>
+                        <a class="nav-link" id="centro-v-tab4-tab" data-toggle="tab" href="#centro-v-tab4" role="tab" aria-controls="centro-v-tab4" aria-selected="false">
+                            <div class="card card-body">
+                                <h6>Terapia tipo 4</h6>
+                                Nam liber tempor cum soluta nobis eleifend option congue nihil imper.
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-8 my-auto">
+                    <!-- TODO: Make this column expand vertically the same as the previous one-->
+                    <div class="tab-content" id="centro-v-pills-tabContent" >
+                        <div class="tab-pane fade show active" id="centro-v-tab1" role="tabpanel" aria-labelledby="centro-v-tab1-tab" >
+                            <embed src="docs/nombre_sin_espacios_mejor.pdf" type="application/pdf" width="100%" height="100%">  <!-- TODO: make this div the same height as the left column -->
+                        </div>
+                        <div class="tab-pane fade" id="centro-v-tab2" role="tabpanel" aria-labelledby="centro-v-tab2-tab">
+                            <embed src="docs/nombre_sin_espacios_mejor_2.pdf" type="application/pdf" width="100%" height="100%">  <!-- TODO: make this div the same height as the left column -->
+                        </div>
+                        <div class="tab-pane fade" id="centro-v-tab3" role="tabpanel" aria-labelledby="centro-v-tab3-tab">
+                            <embed src="docs/nombre_sin_espacios_mejor.pdf" type="application/pdf" width="100%" height="100%">  <!-- TODO: make this div the same height as the left column -->
+                        </div>
+                        <div class="tab-pane fade" id="centro-v-tab4" role="tabpanel" aria-labelledby="centro-v-tab4-tab">
+                           <embed src="docs/nombre_sin_espacios_mejor_2.pdf" type="application/pdf" width="100%" height="100%">  <!-- TODO: make this div the same height as the left column -->
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <!-- TODO: Fix image size-->
-        <!-- TODO: Fix css classes....-->
-        <!-- TODO: Replace with JS loop looking at the correct folder-->
+
+            <hr class="mb-5"/>
+        </section>
+
         <section id="news" class="slider_area">
+            <div class="row">
+                <div class="mx-auto text-center">
+                    <h2>NOVEDADES</h2>
+                    <p class="lead mt-3 mb-4">
+                        <a href="#Contacto"> Ponte en contacto con nosotros para las últimas novedades!</a>
+                    </p>
+                </div>
+            </div>
             <div class="container col-md-6">
                 <div id="carouselThree" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">

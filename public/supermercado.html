@@ -23,9 +23,8 @@
     <body>
             <!--navigation-->
         <nav class="navbar navbar-expand-md navbar-light bg-green fixed-top sticky-navigation"> <!-- TODO: Make light green after scroll-->
-            <a class="navbar-brand" href="index.html">
-                <!-- TODO: Make it look a button on hover (make it brighter or something like that) -->
-                <img src="img/logo-web-color.png" height="40px" alt="home-button">
+            <a class="navbar-brand" href="index.html"> <!--TODO: Remove white borderline -->
+                <img src="img/logo-web-color.png" height="40px" alt="home-button" class="card">
             </a>
             <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
                     data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,12 +50,13 @@
 
 
         <!-- SuperGaia section -->
-        <section class="py-6" id="SuperGaia">
-            <div class="container">
+        <section class="py-7 pr-5 pl-5" id="SuperGaia">
                 <div class="row">
-                    <div class="col-md-6 mx-auto text-center">
+                    <div class="mx-auto text-center">
                         <h2>Algo sobre el supermercado</h2>
-                        <p class="lead text-muted">Secciones disponibles, historia, numero de referencias, servicios que se ofrecen etc</p>
+                        <p class="lead mt-3 mb-4">
+                            Secciones disponibles, historia, numero de referencias, servicios que se ofrecen etc
+                        </p>
                     </div>
                 </div>
                 <div class="row mt-5">
@@ -66,9 +66,9 @@
                                 <div class="card card-body">
                                     <h6>CLUB GAIA Promociones y descuentos exclusivos</h6>
                                     Conoce nuestros ofertas semanales (Este PDF deberia tener toda la info sobre el tema, lo de la verdura mas barata el sabado, cuando reponeis panes y demás por ejemplo
-                                    <a href="mailto:pedidos@centroecologicogaia.com?subject=Solicitud de información del Club GAIA&body=Buenos días, me gustaría recibir información sobre las ofertas y servicios del Club GAIA. Muchas gracias" class="btn btn-primary">
-                                        <img src="img/boton-lista-correo.jpg" height="50px" alt="mailing-list-button">
-                                        <!-- TODO: Remove Padding -->
+                                    <!--TODO: Center /-->
+                                    <a href="mailto:pedidos@centroecologicogaia.com?subject=Solicitud de información del Club GAIA&body=Buenos días, me gustaría recibir información sobre las ofertas y servicios del Club GAIA. Muchas gracias" >
+                                        <img src="img/boton-lista-correo.jpg" height="50px" alt="mailing-list-button" class="card">
                                     </a>
                                 </div>
                             </a>
@@ -77,10 +77,14 @@
                                     <h6>Pedidos a domicilio</h6>
                                     Mandamos la lista actualizada los domingos y repartimos martes y miercoles (para otros días preguntad disponibilidad en tienda). Habrá un boton para descargarse la lista de la semana.
                                     Este PDF debería tener la información detallada del reparto
-                                    <a href="docs/HOJA_181021.xlsx" download="HOJA_181021.xlsx" class="btn btn-primary">
+                                   <a href="docs/HOJA_181021.xlsx" download="HOJA_181021.xlsx">
+                                    <button type="button" class="btn btn-success">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                                          <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z"></path>
+                                        </svg>
                                         Descarga la lista de esta semana
-                                    </a>
-                                    <!-- TODO: Get a way to find excel file name dynamically (file will be updated each week)-->
+                                      </button>
+                                   </a>
                                     <!-- TODO: Get a way to send a link to the file but ensure that users first load the webpage and then get the download-->
                                 </div>
                             </a>
@@ -116,9 +120,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
-
 
         <!--footer / contact-->
         <footer class="py-6 bg-dark text-white" id="Contacto">

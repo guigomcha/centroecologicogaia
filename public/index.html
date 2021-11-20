@@ -25,9 +25,8 @@
         <!-- TODO: Reuse as much as possible (Header and Contacto, -->
         <!--navigation-->
         <nav class="navbar navbar-expand-md navbar-light bg-green fixed-top sticky-navigation"> <!-- TODO: Make light green after scroll-->
-            <a class="navbar-brand" href="index.html">
-                <!-- TODO: Make it look a button on hover (make it brighter or something like that) -->
-                <img src="img/logo-web-color.png" height="40px" alt="home-button">
+            <a class="navbar-brand" href="index.html"> <!--TODO: Remove white borderline -->
+                <img src="img/logo-web-color.png" height="40px" alt="home-button" class="card">
             </a>
             <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" 
                     data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +54,7 @@
         <section class="py-6 py-md-7" id="home">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-sm-8 mx-auto text-center">
+                    <div class="mx-auto text-center">
                         <h1>Centro Ecológico Gaia</h1>
                         <p class="lead mt-3 mb-4">
                             El Centro Gaia está dedicado a la Ecología y al bienestar. Reúne un supermercado,
@@ -73,21 +72,28 @@
                     <div class="col-md-9 mx-auto text-center">
                         <div class="row">
                             <div class="col-md-4 col-6">
-                                <div class="featured-box-thumb"><img src="img/super_estanterias.jpg" alt="super-section"></div>
-                                <div class="featured-box-content"><h4>Supermercado Ecológico</h4> <!--TODO: Add link to section \n -->
+                                <div class="featured-box-thumb card">
+                                    <a class="page-scroll" href="supermercado.html">
+                                        <img src="img/super_estanterias.jpg" alt="super-section-link">
+                                    </a>
+                                </div>
+                                <div class="featured-box-content"><h4>Supermercado Ecológico</h4>
                                     <div class="featured-box-desc"><p>Aquí podrás encontrar todo aquello que la Agricultura y
                                         Ganadería Ecológica te puede ofrecer: verduras y frutas frescas toda la semana, cereales y legumbres, vinos,
                                         cervezas, comida preparada, perfumería, droguería ecológica y mucho más.</p>
                                     </div>
                                 </div>
-                                <div class="wpb_wrapper"> <!--TODO: Fix message format to include \n -->
+                                <div class="wpb_wrapper"> <!--TODO: Fix message format to include \n in the content (formatting) -->
                                     <a title="" href="mailto:pedidos@centroecologicogaia.com?subject=Solicitud de información para reparto a domicilio&body=Buenos días, me gustaría recibir información sobre vuestro servicios de reparto a domicilio. Muchas gracias" ><p class="palikefbox">Pídenos información por e-mail</p></a>
                                 </div>
                             </div>
                             <div class="col-md-4 col-6">
-                                <div class="featured-box-thumb"><img src="img/Centro-de-Estudios.jpg" alt="centro-section">
+                                <div class="featured-box-thumb card">
+                                    <a class="page-scroll" href="centro.html#CentroGaia">
+                                        <img src="img/Centro-de-Estudios.jpg" alt="centro-section-link">
+                                    </a>
                                 </div>
-                                <div class="featured-box-content"><h4>Centro de Estudios Alternativos</h4> <!--TODO: Add link to section \n -->
+                                <div class="featured-box-content"><h4>Centro de Estudios Alternativos</h4>
                                     <div class="featured-box-desc"><p>Especializados en MTC, ofrecemos cursos profesionales de Acupuntura y Moxibustión, Qigong, Tuina... así como también Kinesiología Integral y Flores de Bach. Damos una formación teórica y sobre todo práctica, llevada a cabo por los mejores profesionales y con una dedicación minuciosa a los alumnos, que son nuestro mejor aval.</p>
                                     </div>
                                     <div class="featured-box-button">
@@ -97,7 +103,10 @@
 
                             </div>
                             <div class="col-md-4 col-6 mx-auto mt-4 mt-md-0">
-                                <div class="featured-box-thumb"><img src="img/Centro-de-Terapias.jpg" alt="centro-section">
+                               <div class="featured-box-thumb card">
+                                    <a class="page-scroll" href="centro.html#EscuelaGaia">
+                                        <img src="img/Centro-de-Terapias.jpg" alt="escuela-section-link">
+                                    </a>
                                 </div>
                                 <div class="featured-box-content"><h4>Centro de Técnicas Naturales</h4>
                                     <div class="featured-box-desc"><p>Ayuda de profesionales especializados en diferentes técnicas y sistemas de sanación, desde la Acupuntura y la Alimentación, a las Flores de Bach y las Constelaciones Familiares. También un lugar de práctica de Pilates, Yoga y Qigong además de Meditación Budista.</p>
